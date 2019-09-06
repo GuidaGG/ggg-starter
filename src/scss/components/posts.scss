@@ -1,0 +1,17 @@
+article{
+    border: $borders;
+  
+
+    .entry-header{
+        background-color: $header-color;
+        padding: 20px;
+    }
+
+    .entry-content, .entry-footer{
+        padding: 20px;
+    }
+}
+
+.post-navigation{
+    font-size: 30px;
+}

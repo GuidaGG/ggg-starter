@@ -1,0 +1,54 @@
+
+header#masthead{
+    height: $header-height;
+    background-color: $header-color;
+    padding: 0 20px;
+    .site-title{
+        font-size: $header-title;
+    }
+    .custom-logo-link, .site-title{
+        display: inline;
+    }
+    .site-branding{
+        width: 80%;
+        display: inline;
+    }
+   
+    .main-navigation{
+
+        background-color: white;
+        font-size: $header-menu;
+        border: $borders;
+        li{
+            padding: 10px;
+            display: inline-block;
+        }
+
+    }
+    
+    
+    button.menu-toggle{
+        cursor: pointer;
+        float: right;
+        border-radius:0;
+        padding: 5px;
+        background-color: transparent;
+        border:none;
+        font-size: $header-menu;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+    header#masthead{
+        top: 0;
+        position: fixed;
+        width: 100%;
+        z-index: 10;
+    
+    }
+    .site-content{
+        margin-top: $header-height;
+
+    }
+}
